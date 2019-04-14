@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var todoRoutes = require('./routes/todos');
 
 app.get('/', function(req, res){
-   res.send('Hell from the root route');
+   res.send('Hello from the root route');
 });
 
 app.use('/api/todos', todoRoutes);
